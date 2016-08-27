@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multiplication Tables</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		Multiplication Tables
+	</header>
+	<section id="main">
+		<div id="numbers"></div>
+		<div id="question">12 x 12 = ?</div>
+		<div id="answers">
+			<button class="answer">11</button><button class="answer">22</button><button class="answer">31</button><button class="answer">40</button><button class="answer">144</button>
+		</div>
+	</section>
+	<div id="right"><span>YES!</span></div>
+	<div id="wrong"><span>TRY AGAIN!</span></div>
+	<audio id="wrong-1" src="sounds/horns.mp3" />
+	<audio id="wrong-2" src="sounds/uhoh.mp3" />
+	<audio id="wrong-3" src="sounds/ohno.mp3" />
+	<audio id="right-1" src="sounds/tada.mp3" />
+	<audio id="right-2" src="sounds/correct.mp3" />
+	<audio id="right-3" src="sounds/groovy.mp3" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

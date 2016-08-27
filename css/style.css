@@ -1,0 +1,139 @@
+html,body {
+	height: 100%;
+}
+
+#hidden {
+	display:none;
+}
+header {
+	padding-top: 2em;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+button {
+	padding: 0;
+	margin: 0.2em;
+}
+
+button:focus {
+	outline: none;
+}
+
+#question {
+	font-size: 10em;
+	width: 60%;
+	margin: 0 auto;
+	padding: 3rem;
+	border-radius: 2rem;
+	background-color: #f00;
+	color: #fff;
+}
+
+#answers {
+	margin-top: 2em;
+}
+
+#answers > button {
+	width: 3em;
+	height: 2em;
+	background-color: orange;
+	color: #fff;
+	border: none;
+	font-size: 3em;
+	border-radius: 0.5em;
+}
+
+#numbers {
+	margin: 1rem 0;
+}
+
+#numbers > button {
+	font-size: 1.2em;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: blue;
+	color: #fff;
+	border-radius: 0.25em;
+	border: none;
+}
+
+button#active {
+	background-color: yellow;
+	color: #000;
+}
+
+#right, #wrong {
+	display:none;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	font-size: 8em;
+	width: 100%;
+	margin: auto;
+}
+
+#right {
+	background-color: lime;
+}
+
+#wrong {
+	background-color: red;
+}
+
+#right > span, #wrong > span {
+	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
+ 	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 900px) {
+	#question {
+		font-size: 5em;
+		padding: 1rem;
+		border-radius: 1.5rem;
+	}
+	
+	#answers {
+		margin-top: 1em;
+	}
+
+	#answers > button {
+		font-size: 1.3em;
+		border-radius: 0.3em;
+		width: 2em;
+	}
+
+	#numbers > button {
+		font-size: 1em;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 0.25em;
+		margin: 0.1rem;
+	}
+
+	#right, #wrong {
+		position: absolute;
+		top: 0;
+		padding: 8.5rem 0;
+		font-size: 3em;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#question {
+		font-size: 2em;
+		padding: 1.5rem;
+	}
+
+	#numbers > button {
+		margin: 0.1rem;
+	}
+}
